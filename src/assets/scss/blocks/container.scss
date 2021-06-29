@@ -1,0 +1,9 @@
+.container{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+
+    @include breakpoint($tablet-bp){
+        padding: 0 1.5rem;
+    }
+}

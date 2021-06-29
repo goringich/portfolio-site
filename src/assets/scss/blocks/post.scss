@@ -1,0 +1,267 @@
+.post{
+    background-color: $primary;
+    box-shadow: 0px 15px 25px rgba($black, 0.35);
+    border-radius: 5px;
+    padding: 2.6rem;
+
+    margin-bottom: 3rem;
+
+    &--work{
+        display: flex;
+        padding: 0 !important;
+        max-height: 60rem;
+        margin-bottom: 5rem;
+        margin-top: 2.5rem;
+
+        @include breakpoint($mobile-bp){
+            flex-direction: column;
+        }
+    }
+
+    &--mb{
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+    }
+
+    @include breakpoint($tablet-bp){
+        padding: 2rem;
+        margin: 0 0 1.5rem;
+    }
+
+    @include breakpoint($mobile-bp){
+        margin-bottom: 2rem;
+    }
+}
+
+.post__header{
+    overflow: hidden;
+    margin: 0 0 2.5rem;
+    height: auto;
+
+    img{
+        width: 100%;
+    }
+
+    &--preview{
+        margin: -2.5rem -2.5rem 2.5rem;
+
+        @include breakpoint($tablet-bp){
+            margin: -2rem -2rem 2rem;
+        }
+    }
+}
+
+.post__subtitle{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 500;
+
+    a{
+        color: $white;
+        line-height: 0.5;
+    }
+
+    &--mb0{
+        margin-bottom: 0.1rem;
+
+        @include breakpoint($tablet-bp){
+            margin-bottom: 0rem !important;
+        }
+    }
+
+    &--mt{
+        margin-top: 3rem;
+
+        @include breakpoint($mobile-bp){
+            margin-top: 1rem;
+        }
+    }
+
+    &--pad{
+        padding: 1.5rem 0;
+    }
+
+    @include breakpoint($mobile-bp){
+        margin-bottom: 1rem;
+    }
+}
+
+.post__content{
+    color: $gray;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    padding-bottom: 1rem;
+}
+
+.post__text{
+    border-bottom: 2px $dark solid;
+    padding-bottom: 1rem;
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    a{
+        color: $blue;
+    }
+
+    h2, h3, h4, h5, h6{
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h3{
+        color: $white;
+        font-size: 1.25em;
+        line-height: 1.1;
+        font-weight: 500;
+        word-spacing: .2rem;
+    }
+
+    h4{
+        font-size: 1.15em
+    }
+
+    h5, h6{
+        font-size: 1em;
+    }
+
+    ol, ul{
+        margin-bottom: 2rem;
+    }
+
+    ol{
+        list-style: decimal;
+        list-style-position: inside;
+    }
+
+    table{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    &--p0{
+        padding: 0;
+    }
+
+    @include breakpoint($mini-bp){
+        zoom: .9;
+    }
+}
+
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint($tablet-bp){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.post__data{
+    display: flex;
+
+    a{
+        margin: 0 0rem 0 3.5rem;
+        color: inherit;
+
+        @include breakpoint($mini-bp){
+            font-size: 1.1rem;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        margin-bottom: .5rem;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($mini-bp){
+        margin-bottom: 0;
+    }
+}
+
+.post__data-item{
+    color: #828282;
+    position: relative;
+
+    &:not(:last-child):after{
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #C4C4C4;
+
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+
+        transform: translateY(-25%);
+    }
+
+    @include breakpoint($mini-bp){
+        font-size: 1.1rem;
+    }
+}
+
+.post__read{
+    float: right;
+    color: #107EFF;
+
+    @include breakpoint($mini-bp){
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 490px){
+    .post__list{
+        margin-right: 1rem;
+    }
+}
+
+
+.post__actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    color: $white;
+
+    a {
+        color: inherit;
+        opacity: 0.6;
+        transition: opacity .2s linear;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.post__actions--icon{
+    margin-left: .8rem;
+}
+
+.post__skills{
+    line-height: 1.8;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}

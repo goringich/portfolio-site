@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- slick -->
+    <!-- Добавляем стили из CDN -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/> -->
+    <!-- Добавляем тему по умолчанию из CDN -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/> -->
+    
+    <title>Post</title>
+</head>
+<!-- <body class="no-scroll"> -->
+<!-- <body class="show-sidebar"> -->
+<body>
+    
+    <div class="page" id="page">
+
+        <header class="header">
+        
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <a href="index.html" class="nav__link"><li class="nav__item">Главная</li></a>
+                        <li class="nav__item">
+                            <a href="" class="nav__link  has-subnav">Статьи</a>
+                            
+                            <ul class="subnav">
+                                <li><a href="site.html" target="_self">Создание сайтов</a></li>
+                                <li><a href="modal.html" target="_self">3d моделирование</a></li>
+                                <li><a href="">Продвижение сайтов</a></li>
+                            </ul>
+                        </li>
+                        <a target="_self" href="text.html" class="nav__link"><li class="nav__item">Обо мне</li></a>
+                        <a target="_self" href="index.html" class="nav__link"><li class="nav__item">Реклама</li></a>
+                    </ul>
+                </nav>
+        
+                <button id="sidebar__toggle" class="burger" type="button">
+                    <span>открыть навигацию</span>
+                </button>
+            </div>
+        
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <a target="_self" href="entrance.html" class="nav__link nav__link--last"><li class="nav__item">Войти</li></a>
+                        <a target="_self" href="index.html" class="nav__link nav__link--last"><li class="nav__item">Выйти</li></a>
+                        <a target="_self" href="profile.html" class="nav__link nav__link--last"><li class="nav__item">Профиль</li></a>
+                    </ul>
+                </nav>
+                <form class="search" action="search.html" method="get">
+                    <input type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
+        <aside class="sidebar" id="sidebar">
+        
+            <div class="sidebar__header">
+                <img src="../assets/images/sidebar/Rectangle 1.jpg" alt="">
+            </div>
+        
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar profile__avatar--sid" src="../assets/images/sidebar/изображение_viber_2021-04-11_21-36-45.jpg" alt="">
+                    <div class="profile__description">
+                        <div class="profile__name">Игорь Ким</div>
+                        <div class="profile__prof">3d художник, front-end разработчик</div>
+                    </div>
+                </div>
+        
+                <nav class="nav nav--mobile">
+                    <ul class="nav__list">
+                        <a href="http://localhost:3000" class="nav__link"><li class="nav__item">Главная</li></a>
+                        <li class="nav__item has-subnav">
+                            <a href="" class="nav__link  has-subnav">Статьи</a>
+                            
+                            <ul class="subnav">
+                                <li><a href="site.html" target="_self">Создание сайтов</a></li>
+                                <li><a href="modal.html" target="_self">3d моделирование</a></li>
+                                <li><a href="">Продвижение сайтов</a></li>
+                            </ul>
+                        </li>
+                        <a target="_self" href="text.html" class="nav__link"><li class="nav__item">Обо мне</li></a>
+                        <a target="_self" href="http://localhost:3000" class="nav__link"><li class="nav__item">Реклама</li></a>
+                    </ul>
+                </nav>
+        
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                            <img src="../assets/images/sidebar/instagram (1) 1.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="https://vk.com/evlampiy1" target="_blank">
+                            <img src="../assets/images/sidebar/vk 1.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                            <img src="../assets/images/sidebar/pinterest 1.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+        
+                <div class="profile__text">
+                    <p>Front-end разработчик. Практик верстки сайтов.
+                    Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
+                </div><!-- /.profile -->
+            </div><!-- /.sidebar__content -->
+        
+            <div class="sidebar__footer">
+                <a class="btn btn--red" href="site.html">Мои работы</a>
+                <div data-modal="contact-modal" type="button" class="btn btn--blue">Написать мне</div>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="container">
+                
+                <article class="post">
+                    <div class="post__actions">
+                        <a href="index.html">вернуться назад</a>
+                        <a href="">поделиться
+                            <img class="post__actions--icon" src="/assets/images/post/Vector.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="post__header post__header--open">
+                        <div class="post__subtitle post__subtitle--mb0">
+                            <h2>Как создавалась эта картина?</h2>
+                        </div>
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="22-12-2021 19:20">22.12.2021</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="">создание 3d моделей</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="post__content">
+                        <div class="post__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                            <h3>Hello world</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                            <img src="/assets/images/stories/pink.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                        </div>
+                    </div>
+                
+                    <!-- related -->
+                    <div class="related">
+                        <h3 class="post__subtitle">Интересно почитать</h3>
+                        <ul class="related__list">
+                            <li class="related__list--item">
+                                <h4 class="related__list--title">
+                                    <a href="">Сколько стоит моя работа?</a>
+                                </h4>
+                                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+                            </li>
+                            <li class="related__list--item">
+                                <h4 class="related__list--title">
+                                    <a href="">Как создавалалось это видео? А твое не создасться, лох</a>
+                                </h4>
+                                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+                            </li>
+                            <li class="related__list--item">
+                                <h4 class="related__list--title">
+                                    <a href="">Сколько стоит моя работа? Много</a>
+                                </h4>
+                                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+                            </li>
+                            <li class="related__list--item">
+                                <h4 class="related__list--title">
+                                    <a href="">Сколько стоит моя работа? Умпа лумпа</a>
+                                </h4>
+                                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- comments -->
+                    <h3 class="post__subtitle post__subtitle--mt">Обсуждение</h3>
+                    <form class="form" action="/" method="POST">
+                        <div class="form__group">
+                            <textarea data-autoresize class="form__control form__control--textarea" placeholder="Текст комментария" id=""></textarea>
+                            <span class="form__line"></span>
+                        </div>
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                    </form>
+                
+                    <ul class="comments">
+                
+                        <li class="comments__item">
+                            <div class="comments__header">
+                                <img class="comments__avatar" src="./assets/images/sidebar/изображение_viber_2021-04-11_21-36-45.jpg" alt="">
+                                <div class="comments__autor">
+                                    <div class="comments__name">Игорь Ким</div>
+                                    <time class="comments__pubdate" date-time="2021-05-29">неделю назад</time>    
+                                </div>
+                            </div>
+                            <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+                            <button class="comments__reply" type="button">ответить</button>
+                            
+                            <ul class="comments">
+                                <li class="comments__item">
+                                    <div class="comments__header">
+                                        <img class="comments__avatar" src="https://i.pinimg.com/originals/f5/27/41/f52741fb62bf1d821948a49204406bdc.jpg" alt="">
+                                        <div class="comments__autor">
+                                            <div class="comments__name">Лев Ким</div>
+                                            <time class="comments__pubdate" date-time="2021-05-30">6 дней назад</time>    
+                                        </div>
+                                    </div>
+                                    <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+                                    <button class="comments__reply" type="button">ответить</button>
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <div class="comments">
+                            <div class="comments__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="https://i.pinimg.com/originals/f5/27/41/f52741fb62bf1d821948a49204406bdc.jpg" alt="">
+                                    <div class="comments__autor">
+                                        <div class="comments__name">Лев Ким</div>
+                                        <time class="comments__pubdate" date-time="2021-05-30">6 дней назад</time>    
+                                    </div>
+                                </div>
+                                <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+                                <button class="comments__reply" type="button">ответить</button>
+                            </div>
+                        </div>
+                
+                    </ul>
+                </article>
+            </div>
+        </main>
+        
+    </div>
+
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video"
+            src="/assets/video/0001-0072.mp4" 
+            poster="/assets/images/post/изображение_viber_2021-04-15_02-25-32.jpg">
+            </video>
+            <button class="modal__close" type="button">
+                <img src="/assets/images/share/cancel.svg" alt="закрыть">
+            </button>
+        </div>
+    </div>    <div class="modal" id="contact-modal">
+        <div class="modal__content">
+    
+            <button class="modal__close" type="button">
+                <img src="/assets/images/share/cancel.svg" alt="закрыть">
+            </button>
+    
+            <form action="form" class="form">
+                <div class="form__group form__group--mb">
+                    <input class="form__control form__control--pad" type="text" placeholder="Ваше имя">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--mb">
+                    <input class="form__control form__control--pad" type="email" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--mb">
+                    <input class="form__control form__control--pad" type="text" placeholder="Текст сообщения">
+                    <span class="form__line"></span>
+                </div>
+                <a href="index.html" class="btn btn--blue btn--rounded btn--sm btn--mb btn--md" type="submit">Отправить</a>
+                <ul class="form__footer form__footer--center">
+                    <li><a href="mailto:actingsv@gmail.com">email: actingsv@gmail.com</a></li>
+                    <li><a href="tel:+79108888788">тел: +7-910-888-87-88</a></li>
+                </ul>
+            </form>
+    
+        </div><!--modal__content-->
+    </div><!--modal-->    <div class="modal">
+        <div class="modal__content modal__content--pad">
+    
+            <button class="modal__close" type="button">
+                <img src="/assets/images/modal/cancel.svg" alt="закрыть">
+            </button>
+    
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="https://pngicon.ru/file/uploads/instagram.png" alt="">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="https://vk.com/evlampiy1">
+                        <img src="../assets/images/share/vk 2.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item" href="#">
+                    <a class="social__link" href="">
+                        <img src="../assets/images/share/facebook (3) 1.svg"social__item">
+                    </a>
+                </li>
+                <li class="social__item" href="#">
+                    <a class="social__link" href="">
+                        <img src="../assets/images/share/copy.svg"social__item">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video"
+            src="/assets/video/0001-0072.mp4" 
+            poster="/assets/images/post/изображение_viber_2021-04-15_02-25-32.jpg">
+            </video>
+            <button class="modal__close" type="button">
+                <img src="/assets/images/share/cancel.svg" alt="закрыть">
+            </button>
+        </div>
+    </div>
+    <!-- js -->
+    <!-- <script type="text/javascript" src="https:////cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+.form{
+    &--mw{
+        max-width: 30rem;
+        width: 100%;
+
+        @include breakpoint($mobile-bp){
+            transform: translateY(3%);
+            max-width: none;
+        }
+    }
+
+    &--center{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 35rem;
+    }
+}
+
+.form__group{
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &--pr{
+        margin-top: 5rem;
+    }
+
+    &--mb{
+        margin-bottom: 2.5rem;
+    }
+}
+
+.form__control{
+    display: block;
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: $white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #3F3F3F;
+    background-color: transparent;
+
+    &::placeholder{
+        color: rgba($white, .2);
+    }
+
+    &.form__control--textarea{
+        height: 3rem;
+        resize: none;
+        overflow: hidden;
+    }
+
+    &:focus + .form__line{
+        width: 100%;
+    }
+
+    &--pad{
+        padding-bottom: .7rem;
+    }
+}
+
+.form__line{
+    width: 0;
+    height: 1px;
+
+    background-color: $blue;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition: width .3s linear;
+}
+
+.form__footer{
+    a{
+        color: #B2B2B2;
+
+        &:last-child{
+            margin: 1rem;
+        }
+    }
+    
+    margin-top: 2rem;
+
+    &--center{
+        display: flex;
+        text-align: center;
+
+        @include breakpoint($mobile-bp){
+            display: block;
+        }
+    }
+}

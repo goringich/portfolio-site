@@ -1,0 +1,87 @@
+---
+layout: default
+title: Личный блог
+---
+
+<!-- 
+    Будут регистрироваться и входить в свой аккаунт( будут оставлять комменты с авой и именем, это все )
+ -->
+
+<!-- stories -->
+<div class="stories">
+    <div class="stories__item" data-modal="story-modal">
+        <a href="story-modal.html"><img src="/assets/images/stories/cyber.jpg" alt=""></a>
+        <div class="stories__title">Cyberpunk 2.0.7.7. yes of course</div>
+        <time class="stories__date" datetime="2077-09-28 10:18">28.09.2077</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="/assets/images/stories/pink.jpg" alt="">
+        <div class="stories__title">Pink world</div>
+        <time class="stories__date" datetime="2020-12-28 10:18">28.12.2020</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="/assets/images/stories/меч2.jpg" alt="">
+        <div class="stories__title">Sword trailer</div>
+        <time class="stories__date" datetime="2077-09-28 10:18">16.01.2021</time>
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img src="/assets/images/stories/меч1.jpg" alt="">
+        <div class="stories__title">Sword</div>
+        <time class="stories__date" datetime="2077-09-28 10:18">15.02.2021</time>
+    </div>
+</div>
+
+
+<!-- add post -->
+<div class="add-post">
+    <form action="/" method="POST" class="add-post-form">
+        <textarea data-autoresize class="add-post__textarea" id="myTextarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+        <div class="add-post__form-actions">
+            <label class="add-post__file" for="add-post-file">
+                <input type="file" id="add-post-file" onchange="previewFile();">
+                <!-- <input type="image" id="add-post-file"> -->
+            </label>
+            <button type="button" id="postA" class='add-post__send'>
+                <img src="/assets/images/add-post/send btn.svg" alt="Отправить">
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- POSTS -->
+<div class="posts" id="items"></div>
+
+<!-- pagination -->
+<ul class="pagination">
+    <li class="pagination__item">
+        <a href="" class="pagination__link"> &lt;</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__link"> 1</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__link active">2</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__link">3</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__link"> &gt;</a>
+    </li>
+</ul>
+
+<script>
+    function previewFile() {
+        const preview = document.querySelector('.img');
+        const file = document.querySelector('#add-post-file').files[0];
+        const reader = new FileReader();
+        
+        reader.addEventListener("load", function () {
+            preview.src = reader.result;
+        }, false);
+        
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+</script>

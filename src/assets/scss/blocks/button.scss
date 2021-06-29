@@ -1,0 +1,74 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    
+    background-color: $secondary;
+    font-family: inherit;
+    line-height: 1.1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $white;
+
+    border-radius: 2.5rem;
+    padding: 1.1em 2.1em 1.2em 2.2em;
+
+    border: 0;
+    transition: backgoround-color .2s linear;
+
+    cursor: pointer;
+    
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &--red {
+        background-color: $red;
+        box-shadow: 0 10px 17px -10px rgba($red, .3);
+    
+        &:hover {
+            background-color: darken($red, 5%);
+        }
+    }
+    
+    &--blue {
+        background-color: $blue;
+        box-shadow: 0 6px 17px -10px rgba($blue, .3);
+    
+        &:hover{
+            background-color: darken($blue, 5%);
+        }
+
+        @include breakpoint($mobile-bp){
+            margin-top: 1rem;
+        }
+    }
+
+    &--rounded {
+        border-radius: .41em;
+    }
+
+    &--sm {
+        padding: .7em 1.25em .8em;
+    }
+
+    &--md{
+        zoom: 1.1;
+    }
+
+    &--mb{
+        margin-bottom: 1.5rem;
+    }
+
+    &--work{
+        @include breakpoint($tablet-bp){
+            font-size: 1rem;
+        }
+
+        @include breakpoint($mini-bp){
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

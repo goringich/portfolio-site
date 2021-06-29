@@ -1,0 +1,43 @@
+.related{
+    border-bottom: 2px $dark solid;
+    padding: 3rem 0 .5rem;
+
+    @include breakpoint($mobile-bp){
+        padding-top: 1rem;
+    }
+}
+
+.related__list{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile-bp){
+        display: block;
+    }
+}
+
+.related__list--title{
+    font-size: 1.4rem;
+    color: #F3EBA2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    a{
+        color: inherit;
+    }
+}
+
+.related__list--date{
+    color: #828282;
+}
+
+.related__list--item{
+    width: 50%;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint($mobile-bp){
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

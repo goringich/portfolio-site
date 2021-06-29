@@ -1,0 +1,19 @@
+.social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
+}
+
+.social__item{
+    margin: 0 .75rem;
+}
+
+.social__link img{
+    max-width: 4.5rem;
+    width: 100%;
+    border-radius: 45%;
+}

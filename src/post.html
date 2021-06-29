@@ -1,0 +1,120 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+    <div class="post__actions">
+        <a href="index.html">вернуться назад</a>
+        <a href="">поделиться
+            <img class="post__actions--icon" src="/assets/images/post/Vector.svg" alt="">
+        </a>
+    </div>
+    <div class="post__header post__header--open">
+        <div class="post__subtitle post__subtitle--mb0">
+            <h2>Как создавалась эта картина?</h2>
+        </div>
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="22-12-2021 19:20">22.12.2021</time>
+            </li>
+            <li class="post__data-item">
+                <a href="">создание 3d моделей</a>
+            </li>
+        </ul>
+    </div>
+    <div class="post__content">
+        <div class="post__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            <h3>Hello world</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            <img src="/assets/images/stories/pink.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+        </div>
+    </div>
+
+    <!-- related -->
+    <div class="related">
+        <h3 class="post__subtitle">Интересно почитать</h3>
+        <ul class="related__list">
+            <li class="related__list--item">
+                <h4 class="related__list--title">
+                    <a href="">Сколько стоит моя работа?</a>
+                </h4>
+                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+            </li>
+            <li class="related__list--item">
+                <h4 class="related__list--title">
+                    <a href="">Как создавалалось это видео? А твое не создасться, лох</a>
+                </h4>
+                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+            </li>
+            <li class="related__list--item">
+                <h4 class="related__list--title">
+                    <a href="">Сколько стоит моя работа? Много</a>
+                </h4>
+                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+            </li>
+            <li class="related__list--item">
+                <h4 class="related__list--title">
+                    <a href="">Сколько стоит моя работа? Умпа лумпа</a>
+                </h4>
+                <time class="related__list--date" datetime="22-12-2021 19:33">22.12.2021</time>
+            </li>
+        </ul>
+    </div>
+
+    <!-- comments -->
+    <h3 class="post__subtitle post__subtitle--mt">Обсуждение</h3>
+    <form class="form" action="/" method="POST">
+        <div class="form__group">
+            <textarea data-autoresize class="form__control form__control--textarea" placeholder="Текст комментария" id=""></textarea>
+            <span class="form__line"></span>
+        </div>
+        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+    </form>
+
+    <ul class="comments">
+
+        <li class="comments__item">
+            <div class="comments__header">
+                <img class="comments__avatar" src="./assets/images/sidebar/изображение_viber_2021-04-11_21-36-45.jpg" alt="">
+                <div class="comments__autor">
+                    <div class="comments__name">Игорь Ким</div>
+                    <time class="comments__pubdate" date-time="2021-05-29">неделю назад</time>    
+                </div>
+            </div>
+            <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+            <button class="comments__reply" type="button">ответить</button>
+            
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" src="https://i.pinimg.com/originals/f5/27/41/f52741fb62bf1d821948a49204406bdc.jpg" alt="">
+                        <div class="comments__autor">
+                            <div class="comments__name">Лев Ким</div>
+                            <time class="comments__pubdate" date-time="2021-05-30">6 дней назад</time>    
+                        </div>
+                    </div>
+                    <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+                    <button class="comments__reply" type="button">ответить</button>
+                </li>
+            </ul>
+        </li>
+
+        <div class="comments">
+            <div class="comments__item">
+                <div class="comments__header">
+                    <img class="comments__avatar" src="https://i.pinimg.com/originals/f5/27/41/f52741fb62bf1d821948a49204406bdc.jpg" alt="">
+                    <div class="comments__autor">
+                        <div class="comments__name">Лев Ким</div>
+                        <time class="comments__pubdate" date-time="2021-05-30">6 дней назад</time>    
+                    </div>
+                </div>
+                <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore voluptates, officiis necessitatibus id tempore magnam fugit, deleniti provident accusantium animi. Temporibus sit corrupti sint eos iusto. Ipsum nostrum, ad natus exercitationem minus animi in.</div>
+                <button class="comments__reply" type="button">ответить</button>
+            </div>
+        </div>
+
+    </ul>
+</article>
